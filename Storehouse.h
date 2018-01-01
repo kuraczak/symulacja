@@ -2,18 +2,20 @@
  * Storehouse.h
  *
  *  Created on: 28 gru 2017
- *      Author: kuraczak
+ *      Author: Domininia
  */
 
 #ifndef STOREHOUSE_H_
 #define STOREHOUSE_H_
 
 #include "Receiver.h"
-#include "Sender.h"
 
-class Storehouse: public virtual Sender, public virtual Receiver {
+class Storehouse: public virtual Receiver {
+private:
+	int ID;
+
 public:
-	Storehouse();
+	Storehouse( int _ID=0 );
 	virtual ~Storehouse();
 };
 

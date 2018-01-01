@@ -2,7 +2,7 @@
  * Ramp.h
  *
  *  Created on: 28 gru 2017
- *      Author: kuraczak
+ *      Author: DOmininia
  */
 
 #ifndef RAMP_H_

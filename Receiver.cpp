@@ -2,7 +2,7 @@
  * Receiver.cpp
  *
  *  Created on: 28 gru 2017
- *      Author: kuraczak
+ *      Author: Domininia
  */
 
 #include "Receiver.h"

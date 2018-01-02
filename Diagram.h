@@ -14,12 +14,16 @@
 #include "Worker.h"
 #include "Storehouse.h"
 
+
 class Diagram {
 public:
 	Diagram();
 	virtual ~Diagram();
 	std::vector<Ramp> ramps;
 	std::vector<Worker> workers;
+	std::vector<Storehouse> storehouses;
+
+	bool add_worker(int id, QUEUE_TYPE queue, int time);
 private:
 
 };

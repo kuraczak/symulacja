@@ -12,6 +12,8 @@
 #include"Product.h"
 #include<queue>
 
+enum QUEUE_TYPE{FIFO,LIFO};
+
 class Queue{
 
 public:

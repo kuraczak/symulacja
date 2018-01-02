@@ -6,5 +6,7 @@
  */
 
 
+#include<iostream>
+#include "LIFO.h"
 
 

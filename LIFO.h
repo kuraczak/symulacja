@@ -8,7 +8,7 @@
 #ifndef LIFO_H_
 #define LIFO_H_
 
-
+#include<iostream>
 
 
 

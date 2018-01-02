@@ -17,10 +17,6 @@ private:
 public:
 	int getID () const;
 	Product (int _ID=0);
-
-
 };
-
-
 
 #endif /* PRODUCT_H_ */

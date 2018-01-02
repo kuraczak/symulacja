@@ -18,10 +18,10 @@ class Queue{
 
 public:
 	std::queue< Product* > kolejka;
-
+	virtual QUEUE_TYPE getQueueType ()=0;
 	virtual ~Queue()=0;
-	virtual void get_next_product (const Product* &)=0;
-	virtual Product* insert_product(Product nowy)=0;
+	virtual Product&  get_next_product (std::queue< Product* > &)=0;
+	virtual void insert_product(const Product*  )=0;
 	virtual Product* view()=0;
 	virtual bool IsEmpty() const = 0;
 	virtual int size()const = 0;

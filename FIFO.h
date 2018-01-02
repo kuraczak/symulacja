@@ -13,16 +13,19 @@
 #include"Product.h"
 #include"Queue.h"
 
+
 class FIFO : public virtual Queue {
+private:
+	QUEUE_TYPE type;
 
 public:
-
-	 void get_next_product (const Product* & queue)override;
-	 Product* insert_product(Product nowy)override ;
+	 FIFO (QUEUE_TYPE _type=1);
+	 QUEUE_TYPE getQueueType () override;
+	 Product& get_next_product (std::queue< Product* > & kolejka) override ; // pobieram z pocz¹tku kolejki, usuwam go z kolejki
+	 void insert_product (const Product * nowy) override; //dodaje na koniec kolejki
 	 Product* view()override;
 	 bool IsEmpty() const override;
 	 int size()const  override;
-
 };
 
 #endif /* FIFO_H_ */

@@ -18,3 +18,4 @@ bool FIFO:: IsEmpty() const {
 int FIFO :: size()const {
 	return kolejka.size();
 }
+

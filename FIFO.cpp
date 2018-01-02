@@ -11,8 +11,10 @@
 #include"Product.h"
 #include"Queue.h"
 
-bool FIFO:: IsEmpty(Product* kolejka){
-	return kolejka->empty();
-
+bool FIFO:: IsEmpty() const {
+	return kolejka.empty();
 }
 
+int FIFO :: size()const {
+	return kolejka.size();
+}

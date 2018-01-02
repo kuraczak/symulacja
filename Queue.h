@@ -13,16 +13,16 @@
 #include<queue>
 
 class Queue{
-private:
-	std:: queue<Product*> kolejka;
 
 public:
+	std::queue< Product* > kolejka;
+
 	virtual ~Queue()=0;
 	virtual Product get_next_product (Product* kolejka)=0;
 	virtual Product* insert_product(Product nowy)=0;
 	virtual Product* view()=0;
-	virtual bool IsEmpty(kolejka) =0;
-	virtual int size(Product* kolejka)=0;
+	virtual bool IsEmpty() const = 0;
+	virtual int size()const = 0;
 };
 
 

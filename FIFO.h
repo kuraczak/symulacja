@@ -20,8 +20,8 @@ public:
 	 Product get_next_product (Product* kolejka)override;
 	 Product* insert_product(Product nowy)override ;
 	 Product* view()override;
-	 bool IsEmpty(kolejka)override;
-	 int size(Product* kolejka) override;
+	 bool IsEmpty() const override;
+	 int size()const  override;
 
 };
 

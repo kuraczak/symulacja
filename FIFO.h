@@ -17,7 +17,7 @@ class FIFO : public virtual Queue {
 
 public:
 
-	 Product get_next_product (Product* kolejka)override;
+	 void get_next_product (const Product* & queue)override;
 	 Product* insert_product(Product nowy)override ;
 	 Product* view()override;
 	 bool IsEmpty() const override;

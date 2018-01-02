@@ -7,5 +7,12 @@
 
 #include<iostream>
 #include "FIFO.h"
+#include<queue>
+#include"Product.h"
+#include"Queue.h"
 
+bool FIFO:: IsEmpty(Product* kolejka){
+	return kolejka->empty();
+
+}
 

@@ -2,7 +2,7 @@
  * Sender.h
  *
  *  Created on: 28 gru 2017
- *      Author: kuraczak
+ *      Author: rafal
  */
 
 #ifndef SENDER_H_

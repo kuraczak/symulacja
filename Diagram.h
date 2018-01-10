@@ -13,6 +13,9 @@
 #include "Ramp.h"
 #include "Worker.h"
 #include "Storehouse.h"
+#include "Queue.h"
+
+enum TYPE{WORKER, STOREHOUSE, RAMP};
 
 
 class Diagram {
@@ -24,7 +27,10 @@ public:
 	std::vector<Storehouse> storehouses;
 
 	bool add_worker(int id, QUEUE_TYPE queue, int time);
-private:
+	bool add_ramp(int id);
+	bool add_store(int id);
+	bool add_link(TYPE s_type, int s_id, TYPE r_type, int r_id, float prob);
+
 
 };
 

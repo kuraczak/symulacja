@@ -5,8 +5,11 @@
  *      Author: kuraczak
  */
 
+#include "Diagram.h"
+#include "Simulation.h"
 
 int main(){
-int x=5;
+
+	loadfile("dane.txt");
 }
 

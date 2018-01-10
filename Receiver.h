@@ -2,7 +2,7 @@
  * Receiver.h
  *
  *  Created on: 28 gru 2017
- *      Author: Domininia
+ *      Author: kuraczak
  */
 
 #ifndef RECEIVER_H_

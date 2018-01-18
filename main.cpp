@@ -5,11 +5,13 @@
  *      Author: kuraczak
  */
 
-#include "Diagram.h"
+
 #include "Simulation.h"
 
 int main(){
 
-	loadfile("dane.txt");
+	Diagram diag;
+
+	loadfile("dane.txt",diag);
 }
 

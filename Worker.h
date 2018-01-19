@@ -8,9 +8,17 @@
 #ifndef WORKER_H_
 #define WORKER_H_
 
+#include "Queue.h"
+#include "FIFO.h"
+#include "LIFO.h"
+
 class Worker {
 public:
-	Worker();
+	int id;
+	Queue*  queue;
+
+
+	Worker(int _id, QUEUE_TYPE _queue, int time );
 	virtual ~Worker();
 };
 

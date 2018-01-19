@@ -7,11 +7,7 @@
 
 #include "Storehouse.h"
 
-Storehouse::Storehouse(int _ID): ID (_ID) {
-	// TODO Auto-generated constructor stub
-	}
+Storehouse::Storehouse(int _ID): ID (_ID) {	}
 
-Storehouse::~Storehouse() {
-	// TODO Auto-generated destructor stub
-}
+Storehouse::~Storehouse() {}
 

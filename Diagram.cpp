@@ -19,7 +19,7 @@ Diagram::~Diagram() {
 Sender & Diagram::getRefToSender(int id){
 	int i=0;
 	for(Ramp send:ramps){
-		if(send.id==id){
+		if(send.getId()==id){
 			break;
 			return ramps.at(i);
 		}
@@ -39,7 +39,7 @@ Sender & Diagram::getRefToSender(int id){
 Receiver & Diagram::getRefToReceiver(int id){
 	int i=0;
 		for(Storehouse store:storehouses){
-			if(store.id==id){
+			if(store.getId()==id){
 				break;
 				return storehouses.at(i);
 			}
@@ -52,8 +52,6 @@ Receiver & Diagram::getRefToReceiver(int id){
 				}
 				i++;
 		}
-		if(i!=0)
-			return ramps.at(i);
 
 };
 

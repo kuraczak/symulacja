@@ -14,8 +14,9 @@
 class Sender {
 private:
 	std::map<Receiver*,float> receiver;
-	int processing_time;
+
 public:
+	int processing_time;
 	Sender();
 	~Sender();
 	void add_dest_node(Receiver* r, float probability);

@@ -12,11 +12,16 @@
 #include "Sender.h"
 #include "Product.h"
 
-class Ramp: public virtual Sender {
+class Ramp: public  Sender {
 public:
 	Ramp(int _id = -1, int _delivery_interval=1);
 	virtual ~Ramp();
-	Product* create_product <int id>;
+	Product* create_product(int id);
+
+	int getId() const {
+		return id;
+	}
+
 private:
 	int id;
 };

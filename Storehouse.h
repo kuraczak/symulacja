@@ -12,11 +12,15 @@
 
 class Storehouse: public virtual Receiver {
 private:
-	int ID;
+	int id;
 
 public:
 	Storehouse( int _ID=0 );
 	virtual ~Storehouse();
+
+	int getId() const {
+		return id;
+	}
 };
 
 #endif /* STOREHOUSE_H_ */

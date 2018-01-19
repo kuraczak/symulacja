@@ -7,7 +7,7 @@
 
 #include "Storehouse.h"
 
-Storehouse::Storehouse(int _ID): ID (_ID) {	}
+Storehouse::Storehouse(int _ID): id (_ID) {	}
 
 Storehouse::~Storehouse() {}
 

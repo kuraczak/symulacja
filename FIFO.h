@@ -19,9 +19,9 @@ private:
 	QUEUE_TYPE type;
 
 public:
-	 FIFO (QUEUE_TYPE _type = FIFO);
+	 FIFO (QUEUE_TYPE _type);
 	 QUEUE_TYPE getQueueType () override;
-	 Product& get_next_product () override ; // pobieram z pocz¹tku kolejki, usuwam go z kolejki
+	 Product* get_next_product () ; // pobieram z poczï¿½tku kolejki, usuwam go z kolejki
 	 void insert_product (Product * nowy) override; //dodaje na koniec kolejki
 	 bool IsEmpty() const override;
 	 int size()const  override;

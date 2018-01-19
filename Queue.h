@@ -21,8 +21,8 @@ public:
 	std::deque< Product* > kolejka;
 	virtual QUEUE_TYPE getQueueType ()=0;
 	virtual ~Queue()=0;
-	virtual Product&  get_next_product ()=0;
-	virtual void insert_product(const Product*  )=0;
+	virtual Product*  get_next_product ()=0;
+	virtual void insert_product( Product*  )=0;
 	virtual bool IsEmpty() const = 0;
 	virtual int size()const = 0;
 };

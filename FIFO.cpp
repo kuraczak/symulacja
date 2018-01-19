@@ -11,6 +11,7 @@
 #include"Product.h"
 #include"Queue.h"
 
+
 FIFO :: FIFO (QUEUE_TYPE _type) : type(_type){};
 
 bool FIFO:: IsEmpty() const {
@@ -22,12 +23,12 @@ int FIFO :: size()const {
 }
 
 void FIFO :: insert_product (Product* nowy){ // dodaje na koniec
-	kolejka.push(nowy);
+	kolejka.push_back(nowy);
 }
 
 Product & FIFO :: get_next_product () { // pobieram z pocz¹tku
 	Product  do_wydania = kolejka.front();
-	kolejka.pop(); // usuwam pierwszy element z kolejki
+	kolejka.pop_front(); // usuwam pierwszy element z kolejki
 	return do_wydania;
 }
 

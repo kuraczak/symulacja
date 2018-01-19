@@ -23,7 +23,6 @@ public:
 	 QUEUE_TYPE getQueueType () override;
 	 Product& get_next_product () override ; // pobieram z pocz¹tku kolejki, usuwam go z kolejki
 	 void insert_product (Product * nowy) override; //dodaje na koniec kolejki
-	 Product* view()override;
 	 bool IsEmpty() const override;
 	 int size()const  override;
 };

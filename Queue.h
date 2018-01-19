@@ -11,18 +11,18 @@
 #include<iostream>
 #include"Product.h"
 #include<queue>
+#include<deque>
 
 enum QUEUE_TYPE{FIFO,LIFO};
 
 class Queue{
 
 public:
-	std::queue< Product* > kolejka;
+	std::deque< Product* > kolejka;
 	virtual QUEUE_TYPE getQueueType ()=0;
 	virtual ~Queue()=0;
 	virtual Product&  get_next_product ()=0;
 	virtual void insert_product(const Product*  )=0;
-	virtual Product* view()=0;
 	virtual bool IsEmpty() const = 0;
 	virtual int size()const = 0;
 };

@@ -6,9 +6,4 @@
  */
 
 #include "Queue.h"
-#include<iostream>
-#include <queue>
-#include "Product.h"
-
-Queue::Queue
 

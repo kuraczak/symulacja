@@ -13,7 +13,7 @@
 #include"Receiver.h"
 class Sender {
 private:
-	std::map<Receiver*,float> reciver;
+	std::map<Receiver*,float> receiver;
 	int processing_time;
 public:
 	Sender();
@@ -23,7 +23,7 @@ public:
 	Receiver* calc_next_owner();
 	void probability_solve();
 	int getProcessingTime() const {return processing_time;}
-    std::map<Receiver*, float> getReciver() const {return reciver;}
+    std::map<Receiver*, float> getReciver() const {return receiver;}
 };
 
 #endif /* SENDER_H_ */

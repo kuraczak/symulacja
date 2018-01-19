@@ -5,14 +5,12 @@
  *      Author: Domininia
  */
 
+#include<iostream>
+#include"Sender.h"
+#include"Product.h"
 #include "Ramp.h"
 
-Ramp::Ramp() {
-	// TODO Auto-generated constructor stub
+Ramp::Ramp(int _id, int _delivery_interval) : id(_id), processing_time(_delivery_interval) {}
 
-}
-
-Ramp::~Ramp() {
-	// TODO Auto-generated destructor stub
-}
+Ramp::~Ramp() {}
 

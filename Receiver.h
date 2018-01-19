@@ -8,17 +8,16 @@
 #ifndef RECEIVER_H_
 #define RECEIVER_H_
 #include <iostream>
+#include <vector>
 #include "Product.h"
-#include "Worker.h"
-#include "Storehouse.h"
-
 
 class Receiver {
 public:
 	Receiver();
-	virtual ~Receiver();
+	~Receiver();
+	void addProduct(Product* product);
 private:
-	vector<Product*> product_list;
+	std::vector<Product*> product_list;
 };
 
 #endif /* RECEIVER_H_ */

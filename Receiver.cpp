@@ -11,8 +11,10 @@ Receiver::Receiver() {
 	// TODO Auto-generated constructor stub
 
 }
-
 Receiver::~Receiver() {
 	// TODO Auto-generated destructor stub
+}
+void Receiver::addProduct(Product* product){
+	product_list.push_back(product);
 }
 

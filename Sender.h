@@ -9,6 +9,7 @@
 #define SENDER_H_
 
 #include<map>
+#include<iostream>
 #include"Receiver.h"
 class Sender {
 private:
@@ -16,11 +17,13 @@ private:
 	int processing_time;
 public:
 	Sender();
-	virtual ~Sender();
-	void add_dest_node(int id, float probability);
-	void rem_dest_node(int id);
+	~Sender();
+	void add_dest_node(Receiver* r, float probability);
+	void rem_dest_node(Receiver* r);
 	Receiver* calc_next_owner();
-	void probability_solve(float probability);
+	void probability_solve();
+	int getProcessingTime() const {return processing_time;}
+    std::map<Receiver*, float> getReciver() const {return reciver;}
 };
 
 #endif /* SENDER_H_ */

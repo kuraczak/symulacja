@@ -31,6 +31,10 @@ public:
 	bool add_store(int id);
 	bool add_link(TYPE s_type, int s_id, TYPE r_type, int r_id, float prob);
 
+	Sender & getRefToSender(int id);
+	Receiver & getRefToReceiver(int id);
+
+
 
 };
 

@@ -21,11 +21,11 @@ int FIFO :: size()const {
 	return kolejka.size();
 }
 
-void FIFO :: insert_product (const Product* nowy){ // dodaje na koniec
+void FIFO :: insert_product (Product* nowy){ // dodaje na koniec
 	kolejka.push(nowy);
 }
 
-Product & FIFO :: get_next_product (std::queue< Product* > & kolejka) { // pobieram z pocz¹tku
+Product & FIFO :: get_next_product () { // pobieram z pocz¹tku
 	Product  do_wydania = kolejka.front();
 	kolejka.pop(); // usuwam pierwszy element z kolejki
 	return do_wydania;
